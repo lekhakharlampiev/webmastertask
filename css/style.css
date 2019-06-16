@@ -150,7 +150,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 75px 0;
-    margin-right: -10px;
     background-color: #ffffff;
 }
 .posts {
@@ -173,6 +172,7 @@ body {
     background-repeat: no-repeat;
 }
 .post-3 {
+    margin-right: 0; 
     background-image: url(../img/post-3.jpg);
     background-repeat: no-repeat;
 }
@@ -181,6 +181,7 @@ body {
     background-repeat: no-repeat;
 }
 .post-5 {
+    margin-right: 0;
     background-image: url(../img/post-5.jpg);
     background-repeat: no-repeat;
 }
