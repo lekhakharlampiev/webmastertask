@@ -120,6 +120,7 @@ body {
 .email-invalid-error,
 .name-invalid-error {
     position: absolute;
+    display: none;
     padding: 10px;
     background-color: #bb4444;
     border-radius: 2px;
