@@ -149,7 +149,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 75px 0;
-    margin-right: -10px;
     background-color: #ffffff;
 }
 .posts {
