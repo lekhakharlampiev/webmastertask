@@ -1,0 +1,306 @@
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    color: #4488bb;
+}
+.container {
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background-image: url(../img/background-header.png);
+    background-repeat: no-repeat;
+}
+.background-header {
+    background-color: rgba(147, 182, 207, 0.5);
+}
+.background-header 
+.container {
+    display: flex;
+    padding: 30px 0;
+}
+.header-banner {
+    width: 540px;
+    margin-right: auto;
+}
+.header-title {
+    width: 340px;
+    font-size: 48px;
+    color: #ffffff;
+    border-bottom: 7px solid #ffffff;
+}
+.header-content {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
+.header-form {
+    width: 295px;
+    padding: 20px;
+    margin-right: 100px;
+    margin-left: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.feedback-form {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.hidden-label {
+    display: none;
+}
+.feedback-input {
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: normal;
+    color: #aaaaaa;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+.feedback-input::-moz-placeholder {
+     color: #aaaaaa;
+}
+.feedback-input::-webkit-input-placeholder {
+    color: #aaaaaa;
+}
+.feedback-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.checkbox-agree {
+    width: 20px;
+    height: 20px;
+}
+.label-checkbox-agree {
+    margin-left: auto;
+    font-size: 16px;
+    color: #aaaaaa;
+}
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.feedback-buttons {
+    display: flex;
+}
+.button-fedback-submit {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #eeeeee;
+    background-image: linear-gradient(#4082b2, #305f84);
+}
+.button-fedback-Hyperlink {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #aaaaaa;
+    font-size: 16px;
+    color: #aaaaaa;
+}
+.email-invalid-error,
+.name-invalid-error {
+    position: absolute;
+    padding: 10px;
+    background-color: #bb4444;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #eeeeee;
+}
+.email-invalid-error {
+    top: 65px;
+    left: 30px;
+}
+.name-invalid-error {
+    top: 140px;
+    left: 30px;
+}
+.email-invalid-error::before,
+.name-invalid-error::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #bb4444;
+}
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 75px 0;
+    margin-right: -10px;
+    background-color: #ffffff;
+}
+.posts {
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    overflow: hidden;
+    width: 390px;
+    height: 150px;
+    flex-grow: 1;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+.post-1 {
+    background-image: url(../img/post-1.jpg);
+    background-repeat: no-repeat;
+}
+.post-2 {
+    background-image: url(../img/post-2.jpg);
+    background-repeat: no-repeat;
+}
+.post-3 {
+    background-image: url(../img/post-3.jpg);
+    background-repeat: no-repeat;
+}
+.post-4 {
+    background-image: url(../img/post-4.jpg);
+    background-repeat: no-repeat;
+}
+.post-5 {
+    background-image: url(../img/post-5.jpg);
+    background-repeat: no-repeat;
+}
+.post-content {
+    box-sizing: border-box;
+    width: 100%;
+    height: 150px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: rgba(147, 182, 207, 0.7); 
+}
+.post-content-translate {
+    transform: translateY(100px);
+}
+.post-title {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 24px;
+}
+.post-content-show {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(147, 182, 207, 0.7);
+    border: 2px solid #ffffff;
+}
+.post-content-show::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 7px;
+    height: 7px;
+    background-color: rgba(147, 182, 207);
+    border: 2px solid #ffffff;
+}
+.main-promo {
+    background-color: #eeeeee;
+}
+.main-promo 
+.container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.menu-promo-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+}
+.menu-promo-list::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 500px;
+    height: 480px;
+    background-image: url(../img/promo-img.png);
+    background-repeat: no-repeat;
+}
+.menu-promo-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    font-size: 48px;
+
+}
+.menu-promo-item {
+    margin-bottom: 5px;
+}
+.menu-promo-item a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border-bottom: 1px dashed #b1b1b1;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #4488bb;
+}
+.promo-item-1::before, 
+.promo-item-2::before, 
+.promo-item-3::before,
+.promo-item-4::before,
+.promo-item-5::before, 
+.promo-item-6::before {
+    content: "1";
+    margin-right: 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background-color: #4488bb;
+    border-radius: 50%;
+    color: #ffffff;
+}
+.promo-item-2::before {
+    content: "2";
+}
+.promo-item-3::before {
+    content: "3";
+}
+.promo-item-4::before {
+    content: "4";
+}
+.promo-item-5::before {
+    content: "5";
+}
+.promo-item-6::before {
+    content: "6";
+}
+
+
