@@ -359,10 +359,11 @@ body {
 }
 .popup-content {
     position: fixed;
-    width: 590px;
+    box-sizing: border-box;
+    width: 300px;
     top: 30%;
     left: 50%;
-    margin-left: -290px;
+    margin-left: -150px;
     border-radius: 5px;
     padding: 20px;
     background-color: #ffffff;
