@@ -294,9 +294,8 @@ body {
     margin-bottom: 5px;
 }
 .menu-promo-item a {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
+    display: flex;
+     margin: 0;
     padding: 0;
     text-decoration: none;
     border-bottom: 1px dashed #b1b1b1;
@@ -317,7 +316,7 @@ body {
     line-height: 30px;
     display: inline-block;
     vertical-align: middle;
-    width: 30px;
+    min-width: 30px;
     height: 30px;
     background-color: #4488bb;
     border-radius: 50%;

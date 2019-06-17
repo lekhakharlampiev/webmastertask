@@ -450,3 +450,62 @@ body {
 .popup-show {
     display: block;
 }
+@media (min-width: 481px) and (max-width: 800px) {
+    body {
+        min-width: 500px;
+    }
+    .container {
+        width: 500px;
+    }
+    .background-header 
+    .container {
+        flex-direction: column;
+    }
+    .posts {
+        width: 100%;
+        margin-right: 0;
+        background-size: cover;
+    }
+    .menu-promo-list {
+        margin-right: 0;
+    }
+    .menu-promo-list::before {
+        position: static;
+        display: block;
+        width: 400px;
+        background-size: contain; 
+    }
+}
+@media (min-width: 801px) and (max-width: 1199px) {
+    body {
+        min-width: 800px;
+    }
+    .container {
+        width: 800px;
+    }
+    .header-banner {
+        width: 490px;
+    }
+    .header-form {
+        margin-right: 10px;
+    }
+    .posts {
+        width: 100%;
+        margin-right: 0;
+        background-size: cover;
+    }
+    .main-promo .container {
+        justify-content: center;
+    }
+    .menu-promo-list {
+        margin-right: 0;
+    }
+    .menu-promo-list::before {
+        position: static;
+        display: block;
+        width: 500px;
+        background-size: contain; 
+    }
+}
+
+}
