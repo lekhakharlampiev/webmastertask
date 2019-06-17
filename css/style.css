@@ -58,6 +58,15 @@ body {
 }
 .hidden-label {
     display: none;
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    z-index: 1;
+    color: #bb4444;
+}
+.feedback-form-email, 
+.feedback-form-name {
+    position: relative;
 }
 .feedback-input {
     width: 100%;
@@ -173,14 +182,15 @@ body {
     border-right: 10px solid transparent;
     border-bottom: 10px solid #bb4444;
 }
-.error-show {
-    display: block;
-}
 .error {
+    color: #bb4444;
     outline: 2px solid #bb4444;
 }
 .checkbox-agree-error {
     outline: 3px solid #bb4444;
+}
+.error-show {
+    display: block;
 } 
 .posts-container {
     display: flex;

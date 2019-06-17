@@ -33,7 +33,7 @@ for (var i = 0; i < postContentCardToggle.length; i++) {
         this.parentElement.classList.toggle('up-down-content');
     })    
 }
-var feedbackForm = document.querySelector('.feedback-form');
+var feedbackForm = document.querySelector('.js-feedback-form');
 var mailInput = feedbackForm.querySelector('.js-feedback-email');
 var nameUserInput = feedbackForm.querySelector('.js-feedback-name');
 var selectCountryInput = feedbackForm.querySelector('.js-select-input');
@@ -44,16 +44,20 @@ var errorName = feedbackForm.querySelector('.js-name-invalid-error');
 var feedbackCheckboxError = feedbackForm.querySelector('.js-feedback-checkbox');
 var countrySelectedInput = feedbackForm.querySelector('.js-select-input');
 var countryItem = feedbackForm.querySelectorAll('.cuontry-item');
-var pattermail = /^[a-zA-Z @.]+$/;
+var labeNamelFeedbackForm = feedbackForm.querySelector('.js-label-name-input');
+var labelEmailFeedbackForm = feedbackForm.querySelector('.js-label-email-input');
+var pattermail = /^[a-zA-Z0-9 @.]+$/;
 var pattername = /^[a-zA-Z]+$/;
 
 mailInput.addEventListener('input', function () {
     if (!pattermail.test(mailInput.value)) {
         errorMail.classList.add('error-show');
         mailInput.classList.add('error');
+        labelEmailFeedbackForm.classList.add('error-show');
     } else {
         mailInput.classList.remove('error');
         errorMail.classList.remove('error-show');
+        labelEmailFeedbackForm.classList.remove('error-show');
     }
 })
 
@@ -61,9 +65,12 @@ nameUserInput.addEventListener('input', function () {
     if (!pattername.test(nameUserInput.value)) {
         errorName.classList.add('error-show');
         nameUserInput.classList.add('error');
+        labeNamelFeedbackForm.classList.add('error-show');
+
     } else {
         nameUserInput.classList.remove('error');
         errorName.classList.remove('error-show');
+        labeNamelFeedbackForm.classList.remove('error-show');
     }
 })
 
@@ -96,4 +103,15 @@ feedbackForm.addEventListener('submit', function (evt) {
         feedbackCheckboxError.classList.remove('checkbox-agree-error');
         countrySelectedInput.classList.remove('error');
     }
+})
+
+feedbackForm.addEventListener('mouseout', function () {
+    errorMail.classList.remove('error-show');
+    errorName.classList.remove('error-show');
+    feedbackCheckboxError.classList.remove('checkbox-agree-error');
+    countrySelectedInput.classList.remove('error');
+    mailInput.classList.remove('error');
+    nameUserInput.classList.remove('error');
+    labeNamelFeedbackForm.classList.remove('error-show');
+    labelEmailFeedbackForm.classList.remove('error-show');
 })
