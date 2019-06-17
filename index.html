@@ -21,21 +21,23 @@
                         <form action="/" class="feedback-form" method="POST">
                             <div class="feedback-form-email">
                                 <label for="email-user" class="hidden-label">Enter your E-Mail</label>
-                                <input type="text" id="email-user" name="email-user" class="feedback-input feedback-email js-feedback-email" placeholder="Enter your E-Mail">
+                                <input type="text" id="email-user" name="email-user" class="feedback-input feedback-email js-feedback-email" placeholder="Enter your E-Mail" autocomplete="off">
                             </div>
                             <div class="feedback-form-name">
                                 <label for="name-user" class="hidden-label">Enter your name</label>
-                                <input type="text" id="name-user" name="name-user" class=" feedback-input feedback-name js-feedback-name" placeholder="Enter your Name">
+                                <input type="text" id="name-user" name="name-user" class=" feedback-input feedback-name js-feedback-name" placeholder="Enter your Name" autocomplete="off">
                             </div>
                             <div class="feedback-select-country">
-                                <select name="user-country" id="user-country" class="feedback-input js-select-input">
-                                    <option selected="">Select your country</option>
-                                    <option value="ru">Russia</option>
-                                    <option value="us">USA</option>
-                                    <option value="mong">Mongolia</option>
-                                </select>
+                                <input type="text" name="user-country" id="user-country" class="feedback-input feedback-input-select js-select-input" placeholder="Select your country">
+                                <ul class="list-country-selected">
+                                    <li class="cuontry-item">Russia</li>
+                                    <li class="cuontry-item">USA</li>
+                                    <li class="cuontry-item">France</li>
+                                    <li class="cuontry-item">China</li>
+                                    <li class="cuontry-item">Honduras</li>
+                                </ul>
                             </div>
-                            <div class="feedback-checkbox">
+                            <div class="feedback-checkbox js-feedback-checkbox">
                                 <input type="checkbox" id="checkbox-agree" class="checkbox-agree js-checkbox-agree">
                                 <label for="checkbox-agree" class="label-checkbox-agree">
                                     I agree with Terms & Conditions

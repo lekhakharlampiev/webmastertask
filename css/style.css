@@ -77,6 +77,31 @@ body {
 .feedback-input::-webkit-input-placeholder {
     color: #aaaaaa;
 }
+.feedback-select-country {
+    position: relative;
+}
+.list-country-selected {
+    position: absolute;
+    display: none;
+    width: 215px;
+    z-index: 30;
+    top: 43px;
+    left: 0px;
+    background-color: #eeeeee;
+    font-size: 16px;
+    color: #aaaaaa;
+    list-style: none;
+}
+.cuontry-item {
+    padding: 20px 10px;
+}
+.cuontry-item:hover {
+    cursor: pointer;
+}
+.feedback-select-country:hover 
+.list-country-selected {
+    display: block;
+}
 .feedback-checkbox {
     display: flex;
     align-items: center;
@@ -150,6 +175,12 @@ body {
 }
 .error-show {
     display: block;
+}
+.error {
+    outline: 2px solid #bb4444;
+}
+.checkbox-agree-error {
+    outline: 3px solid #bb4444;
 } 
 .posts-container {
     display: flex;
