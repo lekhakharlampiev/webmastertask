@@ -148,6 +148,9 @@ body {
     border-right: 10px solid transparent;
     border-bottom: 10px solid #bb4444;
 }
+.error-show {
+    display: block;
+} 
 .posts-container {
     display: flex;
     flex-wrap: wrap;

@@ -34,12 +34,29 @@ for (var i = 0; i < postContentCardToggle.length; i++) {
     })    
 }
 var feedbackForm = document.querySelector('.feedback-form');
-var mailInput = document.querySelector('.js-feedback-email');
-var nameUserInput = document.querySelector('.js-feedback-name');
-var selectCountryInput = document.querySelector('.js-select-input');
-var feedbackCheckbox = document.querySelector('.js-checkbox-agree');
-var feedbackSubmit = document.querySelector('.js-button-fedback-submit');
+var mailInput = feedbackForm.querySelector('.js-feedback-email');
+var nameUserInput = feedbackForm.querySelector('.js-feedback-name');
+var selectCountryInput = feedbackForm.querySelector('.js-select-input');
+var feedbackCheckbox = feedbackForm.querySelector('.js-checkbox-agree');
+var feedbackSubmit = feedbackForm.querySelector('.js-button-fedback-submit');
+var errorMail = feedbackForm.querySelector('.js-email-invalid-error');
+var errorName = feedbackForm.querySelector('.js-name-invalid-error');
 
 mailInput.addEventListener('input', function () {
-    nameUserInput.value = this.value;
+    var mailvalue = this.value;
+    var pattermail = /^[a-zA-Z @]+$/;
+    if (!pattermail.test(mailInput.value)) {
+        errorMail.classList.add('error-show');
+    } else {
+        errorMail.classList.remove('error-show');
+    }
+})
+
+nameUserInput.addEventListener('input', function () {
+    var pattername = /^[a-zA-Z @]+$/;
+    if (!pattername.test(nameUserInput.value)) {
+        errorName.classList.add('error-show');
+    } else {
+        errorName.classList.remove('error-show');
+    }
 })
