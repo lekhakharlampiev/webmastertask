@@ -466,6 +466,9 @@ body {
         margin-right: 0;
         background-size: cover;
     }
+    .menu-promo-item a {
+        max-width: 70%;
+    }
     .menu-promo-list {
         margin-right: 0;
     }
