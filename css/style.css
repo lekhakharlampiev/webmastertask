@@ -373,6 +373,7 @@ body {
 }
 .popup-content {
     position: fixed;
+    box-sizing: border-box;
     width: 590px;
     top: 30%;
     left: 50%;
@@ -478,6 +479,10 @@ body {
         width: 400px;
         background-size: contain; 
     }
+    .popup-content {
+        width: 400px;
+        margin-left: -200px;
+    }
 }
 @media (min-width: 801px) and (max-width: 1199px) {
     body {
@@ -509,6 +514,8 @@ body {
         width: 500px;
         background-size: contain; 
     }
-}
-
+    .popup-content {
+        width: 600px;
+        margin-left: -300px;
+    }
 }
