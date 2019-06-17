@@ -458,6 +458,9 @@ body {
     .container {
         width: 500px;
     }
+    .header-banner {
+        width: 100%;
+    }
     .background-header 
     .container {
         flex-direction: column;
